@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <title>KARTS</title>
+  <link type="text/css" rel="stylesheet" href="gamers.css">
+  <link type="text/javascript" rel=stylesheet href="gamersss.js">
+  <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src = "gamersss.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  </style>
+  </head>
+
+
+
+  <body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="wrap">
+
+      <div class="header">
+        <h1 id = "KARTS" style="font-size:10vw">KARTS</h1>
+
+      </div><!-- .header -->
+
+      <div class="content">
+        <p id = "us">As our final project, we decided to create an agumented reality
+          game on an iphone. Our goal was to create a functional race game using what
+          we have learned within these past weeks. We decided to use Unity, to create
+          the game, characters,the race track, etc. Through these last two weeks, we encountered many errors but at the end of the day we managed to solve most of it with the help of our peers and teachers.One of the main challenges we faced was trying to get the AR to funcproperly in Unity. Another challenge we faced was in the wesite with the HTML and CSS codes.
+          Our end result was a fully functional website and a simple website. In the future we would like to make the game more interactive and actually add a kart. Lastly, we would like to give special thanks to Christine Meyhard and Justin Restaino for helping us create our game.</p>
+         <p id = "vroom" style= margin-left:130px;margin-right:45px;> "Don't be a salad be the best damn broccoli you could ever be."</p>
+         <p id = "creeper" style = margin-left:375px;margin-right:50px;>-PewDiePie</p>
+<img id = Girls src="Girls-Who-Code.png" alt="Girls Who Code Logo" width="60" height="60">
+      </div><!-- .content -->
+
+      <div class="sidebar">
+
+      <img id = "myImg" src= "IMG_0600.JPG" alt= "Girls Who Code Students" style = "width:100%;max-width:300px">
+      <img id = "myImg2" src= "GWCRocks.JPG" alt= "KARTS" style = "width:100%;max-width:300px">
+      <img id = "myImg3" src= "RIOT.JPG" alt= "LOL" style = "width:100%;max-width:300px">
+        <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+      </div>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+      <div class="clear"></div>
+
+      <div class="footer"></div><!-- .footer -->
+
+  </div><!-- .wrap -->
+
+
+  <div class="navbar">
+    <a class="active" href="file:///Users/gwc/Desktop/KARTS/game.html"><i class="fa fa-gamepad"></i> Home</a>
+    <a href="http://endless.horse/"><i class="fa fa-qrcode"></i> Useless Web</a>
+    <a href="https://www.youtube.com/playlist?list=PLDf8JLz0_XhqpzHckxjWGqf0w3tIxiTVf&disable_polymer=true"><i class="fa fa-youtube-play"></i> Videos</a>
+    <a href="#section2"><i class="fa fa-fw fa-user"></i>About Us</a>
+  </div>
+
+
+<div class="main" id="section2">
+  <h2>About Us</h2>
+  <a href="#section1"></a>
+</div>
+
+<div class="content2">
+  <br>
+  <div class="row"
+    <div class="column" style = "position: absolute; left: 230px; top: 915px;">
+      <div class="card">
+        <img src="shina.jpg" alt="Shina Cortez" style="width:100%">
+        <div class="container">
+          <h2>Shina Cortez</h2>
+          <p class="title">WEB Developer</p>
+          <p>I'm a rising senior at Hamilton Highschool. My dream school <br>
+            is USC and I plan on pursuing a career related to Computer <br>
+            Science. On my free time I play video games with my friends<br>
+            and soccer.</p>
+          <p>scortezg0004@mymail.lausd.net</p>
+          <a href="https://instagram.com/notshina" class="button">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column" style = "position: absolute; right:220px; top: 915px;">
+      <div class="card">
+        <img src="Janet.JPG" alt="Janet" style="width:100%">
+        <div class="container">
+          <h2>Janet Rayo</h2>
+          <p class="title">Game Developer</p>
+          <p> I am a rising senior at Alliance Gertz Ressler High Schooland my dream university is UCLA. I plan on majoring in Computer Science and Pre-med.</p>
+          <p>janetrb032a@studentslaalliance.org</p>
+          <a href="https://instagram.com/peachyrrose" class="button">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="column" style = "position: absolute; left:220px; bottom: -1557px;">
+      <div class="card">
+        <img id = jess src="jess.JPG" alt="Jessica" style="width:100%">
+        <div class="container">
+          <h2>Jessica Flores</h2>
+          <p class="title">WEB Developer</p>
+          <p> I use to go to Math & Science College Preparatory and I was in girl who code program at Riot games during the summer. And learn about computer science during high school and it for 7 week and it was good to experience something new.</p>
+          <p>jlf15825@stem-student.org</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style = "position: absolute; right:220px; bottom: -1557px;">
+    <div class="card">
+      <img src="athena.JPG" alt="Athena" style="width:100%">
+      <div class="container">
+        <h2>Athena Mondragon</h2>
+        <p class="title">Game Developer</p>
+        <p> I’m a senior at Gertz Ressler High School and can’t wait to go to college. I really loved figuring out new programs and making this game. </p>
+        <p>athenam30308@students.laalliance.org </p>
+        <a href="https://instagram.com/that_one_science_nerd" class="button">Instagram</a>
+      </div>
+    </div>
